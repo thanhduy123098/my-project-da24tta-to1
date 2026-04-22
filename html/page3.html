@@ -1,0 +1,76 @@
+﻿<!DOCTYPE HTML>
+<html lang = "vi">
+<head> <title>Trang Web Giới Thiệu Bản Thân</title> </head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "../css/style3.css">
+<body>
+  <div class="container">
+    <form id="frmRegister">
+      <h3 id="title">Đăng ký</h3>
+
+      <div class="form-group">
+        <label for="txtHoTen">Họ tên:</label>
+        <input class="form-control" type="text" id="txtHoTen" name="txtHoTen">
+      </div>
+
+      <div class="form-group">
+        <label for="txtMSSV">MSSV:</label>
+        <input class="form-control" type="text" id="txtMSSV" name="txtMSSV">
+      </div>
+
+      <div class="form-group">
+        <label for="selLop">Lớp:</label>
+        <select class="form-control" id="selLop" name="selLop">
+          <option value="item1">DA24TTA</option>
+          <option value="item2">DA24TTB</option>
+          <option value="item3">DA24TTC</option>
+          <option value="item4">DA24TTD</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="dtNgaySinh">Ngày sinh:</label>
+        <input class="form-control" type="date" id="dtNgaySinh" name="dtNgaySinh">
+      </div>
+
+      <div class="form-group">
+        <label for="txtDiaChi">Địa chỉ:</label>
+        <input class="form-control" type="text" id="txtDiaChi" name="txtDiaChi">
+      </div>
+
+      <div class="form-group">
+        <label for="txtSDT">Số điện thoại:</label>
+        <input class="form-control" type="tel" id="txtSDT" name="txtSDT">
+      </div>
+
+      <div class="form-group">
+      <label>Giới tính:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="radGioiTinh" value="Nam"> Nam</label>
+        <label><input type="radio" name="radGioiTinh" value="Nu"> Nữ</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Điểm mạnh:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="chkDiemManh" value="An"> Ăn</label>
+        <label><input type="checkbox" name="chkDiemManh" value="Ngu"> Ngủ</label>
+        <label><input type="checkbox" name="chkDiemManh" value="LamBieng"> Làm biếng</label>
+      </div>
+    </div>
+
+      <div class="form-group">
+        <label for="txtGioiThieu">Giới thiệu:</label>
+        <textarea class="form-control" id="txtGioiThieu" name="txtGioiThieu"></textarea>
+      </div>
+
+      <div class="button-group">
+        <input class="button" type="submit" value="Đăng ký">
+        <input class="button" type="reset" value="Nhập lại">
+      </div>
+      
+    </form>
+  </div>
+</body>
+</html>
