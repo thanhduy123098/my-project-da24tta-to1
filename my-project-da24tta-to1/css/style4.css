@@ -1,0 +1,50 @@
+﻿/* Đưa bảng ra giữa và xóa khoảng trống giữa các đường viền */
+table {
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto; 
+    border-collapse: collapse; /* Gộp viền lại cho nét mỏng và sắc */
+    font-family: 'Segoe UI', Arial, sans-serif; /* Đổi sang font chữ không chân hiện đại */
+    color: #333; /* Dùng màu xám đậm thay vì đen tuyền để dịu mắt hơn */
+}
+
+/* Khoảng cách và đường viền cho các ô */
+th, td {
+    padding: 12px 16px; /* Tăng không gian để bảng không bị tù túng */
+    border-bottom: 1px solid #e0e0e0; /* Chỉ dùng viền dưới mỏng màu xám nhạt */
+    text-align: center;
+}
+
+/* Điểm nhấn cho hàng tiêu đề */
+th {
+    background-color: #f8f9fa; /* Màu nền xám cực nhạt */
+    color: #555;
+    font-weight: 600;
+}
+
+/* Hiệu ứng tương tác: Đổi màu nền cực nhẹ khi rê chuột qua từng dòng */
+tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* Căn lề trái cho tên hàng để dễ đọc hơn */
+td:nth-child(2) {
+    text-align: left;
+}
+
+/* Style riêng cho dòng Tổng thanh toán cuối cùng */
+tr:last-child {
+    font-weight: bold;
+    background-color: #f4f6f8;
+}
+
+tr:last-child td:first-child {
+    text-align: right; /* Ép chữ Tổng thanh toán sang sát lề phải */
+    padding-right: 20px;
+}
+
+/* Nổi bật con số tổng tiền */
+#tong {
+    color: #d9534f; /* Một chút màu đỏ/cam đất cho phần quan trọng nhất */
+    font-size: 1.1em;
+}
