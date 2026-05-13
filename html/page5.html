@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html lang = "vi">
+<head> <title>Trang Web Giới Thiệu Bản Thân</title> </head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "../css/style5.css">
+<body>
+    <form id="frmInBCC">
+        <h2>In Bảng Cửu Chương</h2>
+        
+        <label>Nhập số từ 2-9:</label>
+        <input type="number" min="2" max="9" value="2"> 
+        
+        <button type="button" onclick="inBCC()">In</button>
+        
+        <div id="kq" style="border: 1px solid #333; padding: 10px; margin-top: 15px; width: fit-content;">
+            Bảng cửu chương sẽ hiện ở đây
+        </div>
+    </form>
+ <br><br>
+
+
+
+
+
+<script>
+function inBCC() {
+    const myForm = document.forms["frmInBCC"];
+    const myNumber = myForm.elements[0];
+    let num = parseInt(myNumber.value);
+    let kq = "";
+    for (let i = 1; i <= 10; i++) {
+        kq += num + " x " + i + " = " + (num * i) + "<br>";
+    }
+    document.getElementById("kq").innerHTML = kq;
+}
+</script>
+
+
+
+</body>
+</html>

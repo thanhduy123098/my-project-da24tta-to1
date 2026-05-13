@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML>
+<html lang = "vi">
+<head> <title>Trang Web Giới Thiệu Bản Thân</title> </head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "../css/style5.css">
+<body>
+
+<body>
+    <h2>Đăng Ký Môn Học</h2>
+    <div class="container">
+        <input type="button" value="Thêm" onclick="addRow()">
+
+        <div id="main"></div>
+    </div>
+
+    <script>
+        function addRow() {
+            var myRow = document.createElement("div");
+            myRow.setAttribute("class", "row");
+
+            var label1 = document.createElement("label");
+            label1.innerText = "Nhập môn: ";
+            var input1 = document.createElement("input");
+            input1.type = "text";
+
+            var label2 = document.createElement("label");
+            label2.innerText = " Số TC: ";
+            var input2 = document.createElement("input");
+            input2.type = "number";
+
+            var label3 = document.createElement("label");
+            label3.innerText = " Loại: ";
+            var select = document.createElement("select");
+
+            var option1 = document.createElement("option");
+            option1.value = "500";
+            option1.text = "Cơ sở";
+
+            var option2 = document.createElement("option");
+            option2.value = "640";
+            option2.text = "Chuyên ngành";
+            option2.selected = true;
+
+            select.appendChild(option1);
+            select.appendChild(option2);
+
+            myRow.appendChild(label1);
+            myRow.appendChild(input1);
+            myRow.appendChild(label2);
+            myRow.appendChild(input2);
+            myRow.appendChild(label3);
+            myRow.appendChild(select);
+            document.getElementById("main").appendChild(myRow);
+}
+    </script>
+</body>
+
+
+</body>
+</html>

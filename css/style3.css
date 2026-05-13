@@ -1,0 +1,53 @@
+﻿body {
+  font-family: Arial, sans-serif;
+  margin: 50px;
+  background-color: #f0f0f0; /* Thêm màu nền cho trang ở đây */
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 50px;
+}
+
+form {
+  width: 500px;
+  margin: auto;
+  border: 0px;
+  padding: 20px;
+}
+
+/* Chia 2 cột: Label bên trái (cố định), Input bên phải (giãn ra) */
+div {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+label {
+  width: 120px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="date"], input[type="tel"], select, textarea {
+  flex: 1;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 4px;
+}
+
+
+button, input[type="submit"], input[type="reset"] {
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 5px 15px;
+  cursor: pointer;
+  background: #eee;
+  margin-right: 10px;
+}

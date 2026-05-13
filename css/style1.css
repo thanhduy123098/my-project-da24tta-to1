@@ -1,0 +1,36 @@
+﻿p{
+	color: black;
+}
+
+
+
+body {
+    background: url('../asset/images/hoasen.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+table { 
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 10px;
+    border-collapse: separate; 
+}   
+
+*{
+    color: #3E2723;
+}
+
+h1{ text-align: center; }
+h2, h3 {
+    border-left: 5px solid #3E2723;
+    padding-left: 10px;
+    margin-bottom: 15px;
+
+
+
+img {
+    border-radius: 12px;
+}
+
